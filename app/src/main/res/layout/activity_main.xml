@@ -1,18 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/colorBackgroundDark"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Space
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Displays Frank's status.-->
+    <TextView
+        android:id="@+id/status_message"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!--Bluetooth connection indicator.-->
+    <ImageView
+        android:id="@+id/bt_status_image"
+        android:contentDescription="@string/connection_status_label"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <Space
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!--Bluetooth On/Off toggle button.-->
+    <androidx.appcompat.widget.AppCompatToggleButton
+        android:id="@+id/bt_toggle"
+        android:textOff="@string/enable_bt"
+        android:textOn="@string/disable_bt"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorPrimary"
+        android:minWidth="250dp"
+        android:minHeight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--Connect to Frank button.-->
+    <androidx.appcompat.widget.AppCompatToggleButton
+        android:id="@+id/connection_toggle"
+        android:textOff="@string/connect_to_frank"
+        android:textOn="@string/disconnect_from_frank"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorPrimary"
+        android:minWidth="250dp"
+        android:minHeight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--Test Bluetooth button.-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/test_bt"
+        android:text="@string/test_bt"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorPrimary"
+        android:minWidth="250dp"
+        android:minHeight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--Test Microphone button.-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/test_mic"
+        android:text="@string/test_mic"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorPrimary"
+        android:minWidth="250dp"
+        android:minHeight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
