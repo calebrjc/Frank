@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#C62828</color>
-    <color name="colorPrimaryDark">#B71C1C</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="colorWhite">#FFFFFF</color>
-    <color name="colorBlack">#000000</color>
-    <color name="colorBackgroundDark">#2E2E2E</color>
+    <color name="primary">#C62828</color>
+    <color name="primaryDark">#B71C1C</color>
+    <color name="primaryLight">#EF9A9A</color>
+    <color name="accent">#EF9A9A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="backgroundDark">#000000</color>
+    <color name="appBarBackGround">#1D1D1D</color>
+    <color name="unselectedColor">#616161</color>
 </resources>

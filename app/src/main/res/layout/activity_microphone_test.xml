@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/test_mic_root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MicrophoneTest"
+    android:background="@color/backgroundDark">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mic_status_message"
+        android:text="Frank"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/space1"
+        android:layout_centerHorizontal="true"/>
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_above="@id/mic_status_image"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+    <ImageView
+        android:id="@+id/mic_status_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/connection_status_label"/>
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_below="@id/mic_status_image"
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
+
+    <androidx.appcompat.widget.AppCompatToggleButton
+        android:id="@+id/mic_toggle"
+        android:textOff="Start Recording"
+        android:textOn="Stop Recording"
+        android:backgroundTint="@color/primary"
+        android:minWidth="250dp"
+        android:minHeight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space2"
+        android:layout_centerHorizontal="true"/>
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_below="@id/mic_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <androidx.appcompat.widget.AppCompatToggleButton
+        android:id="@+id/playback_toggle"
+        android:textOff="Play Recorded Audio"
+        android:textOn="Stop Playing Audio"
+        android:backgroundTint="@color/primary"
+        android:minWidth="250dp"
+        android:minHeight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space3"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nav_view"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Frank</string>
     <string name="welcome">Welcome to Frank!</string>
-    <string name="device_ready">Your device is ready to connect to Frank!</string>
+    <string name="device_ready">Your device is ready for Frank!</string>
     <string name="device_not_ready">Bluetooth must be enabled to connect to Frank.</string>
     <string name="bt_not_supported">Your device is not bluetooth compatible.</string>
+    <string name="bt_turned_off">Bluetooth has been turned off!</string>
+    <string name="bt_turned_on">Bluetooth has been turned on!</string>
     <string name="connection_status_label">Current connection status</string>
     <string name="enable_bt">Enable Bluetooth</string>
     <string name="disable_bt">Disable Bluetooth</string>
@@ -11,4 +13,10 @@
     <string name="disconnect_from_frank">Disconnect From Frank</string>
     <string name="test_bt">Test Bluetooth</string>
     <string name="test_mic">Test Microphone</string>
+    <string name="bt_request_blocked">Please enable bluetooth permissions!</string>
+    <string name="ask_for_permissions">Please grant bluetooth permissions!</string>
+    <string name="not_implemented">This feature hasn\'t been implemented yet.</string>
+    <string name="mic_ready">Your microphone is ready to record audio.</string>
+    <string name="mic_request_blocked">Please allow this app to record audio.</string>
+    <string name="mic_permission_granted">Audio permission granted! Please try again.</string>
 </resources>
